@@ -18,6 +18,11 @@ let bird = {
   height: birdHeight,
 };
 
+// pipes
+let pipeArray = [];
+let pipeWidth = 64;
+let pipeHeight = 512;
+
 //window.onload execute a script once a web page has completely loaded all content (including images, script files, CSS files, etc)
 window.onload = () => {
   board = document.getElementById("board");
