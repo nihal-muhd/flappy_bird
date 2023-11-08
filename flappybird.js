@@ -36,4 +36,16 @@ window.onload = () => {
   birdImg.onload = () => {
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
   };
+  requestAnimationFrame(update);
 };
+
+// For updating frames of canvas. This is the main game loop
+function update() {
+  requestAnimationFrame(update);
+  // Every time we update our frame we need to clear the previous frame other wise frames will stack on top of each other
+  // Value is given because it is covering entire canvas.
+  context.clearRect(0, 0, board.width, board.height);
+
+  // bird
+  context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+}
