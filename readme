@@ -1,2 +1,5 @@
 requestAnimationUpdate():-
 The requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint.
+
+i. window.onload: execute a script once a web page has completely loaded all content (including images, script files, CSS files, etc)
+ii. context.clearRect:Every time we update our frame we need to clear the previous frame other wise frames will stack on top of each other.Value is given because it is covering entire canvas.
