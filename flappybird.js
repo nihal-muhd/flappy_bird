@@ -139,7 +139,6 @@ function placePipes() {
     height: pipeHeight,
     passed: false,
   };
-
   pipeArray.push(bottomPipe);
 }
 function moveBird(e) {
